@@ -28,7 +28,6 @@ mongoose
   .connect(process.env.MONGODB_URI, {
     maxPoolSize: 25,
     minPoolSize: 10,
-    wtimeoutMS: 3000,
   })
   .then(() => {
     console.log("Connected to MongoDB");
