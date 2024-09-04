@@ -103,6 +103,7 @@ module.exports = {
             },
           },
         },
+        // group logs by customerId and push them into an array
         {
           $group: {
             _id: "$customerId",
@@ -115,6 +116,7 @@ module.exports = {
             },
           },
         },
+        // join customers with customerlogs to provide customer info
         {
           $lookup: {
             from: "customers",
@@ -140,6 +142,7 @@ module.exports = {
             },
           },
         },
+        // sort by customerId
         {
           $sort: {
             customerId: 1,
