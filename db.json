@@ -1,0 +1,48 @@
+{
+    "locations": [
+      {
+        "locationId": 1,
+        "name": "Main Office",
+        "createdDate": "2023-01-01T10:00:00Z"
+      },
+      {
+        "locationId": 2,
+        "name": "Branch Office",
+        "createdDate": "2023-02-01T10:00:00Z"
+      }
+    ],
+    "customers": [
+      {
+        "customerId": 1,
+        "locationId": 1,
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "123-456-7890",
+        "createdDate": "2023-03-01T10:00:00Z"
+      },
+      {
+        "customerId": 2,
+        "locationId": 2,
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "phone": "098-765-4321",
+        "createdDate": "2023-04-01T10:00:00Z"
+      }
+    ],
+    "customerLogs": [
+      {
+        "customerId": 1,
+        "type": "info",
+        "text": "Customer created",
+        "date": "2023-03-01T10:00:00Z"
+      },
+      {
+        "customerId": 2,
+        "type": "warning",
+        "text": "Customer email not verified",
+        "date": "2023-04-02T10:00:00Z"
+      }
+    ]
+  }
